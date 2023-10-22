@@ -1,4 +1,5 @@
 import './index.css'
+import QRCode from 'qrcode'
 
 initializeLink()
 initializeLocale()
@@ -10,6 +11,14 @@ function initializeLink() {
     document.getElementById('link-text').innerText = link
 
     setTimeout(() => (location.href = link), 1000)
+
+    QRCode.toDataURL(link, { errorCorrectionLevel: 'high' }, (error, url) => {
+        if (error) return
+
+        const img = document.getElementById('qr-code')
+        img.classList.toggle('hidden')
+        img.src = url
+    })
 }
 
 function initializeLocale() {
