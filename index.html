@@ -12,45 +12,41 @@
     <body class="bg-sonolus-main text-sonolus-ui-text-normal">
         <div class="fixed top-0 left-0 h-[100vh] w-[100vw]">
             <main
-                class="mx-auto flex h-full max-w-4xl flex-col justify-center space-y-9 p-9 text-center sm:space-y-12 sm:p-12"
+                class="mx-auto flex h-full max-w-4xl flex-col justify-center p-9 text-center sm:p-12"
             >
                 <h1 id="header" class="py-1 text-xl font-bold sm:py-1.5 sm:text-3xl">Opening...</h1>
-                <section class="space-y-1 sm:space-y-1.5">
+                <section class="mt-9 sm:mt-12">
                     <p id="try-again">
                         If Sonolus did not open, click the following link to try again:
                     </p>
-                    <a id="link" class="space-x-1 underline sm:space-x-1.5">
+                    <a id="link" class="underline">
                         <span id="link-text" class="break-words"></span>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512"
-                            class="inline h-4 w-4 fill-current align-text-bottom sm:h-5 sm:w-5"
+                            class="inline ml-1 h-4 w-4 fill-current align-text-bottom sm:ml-1.5 sm:h-5 sm:w-5"
                         >
                             <path
                                 d="M256 64c0-17.67 14.3-32 32-32h127.1c5.2 0 9.4.86 13.1 2.43 2.9 1.55 7.3 3.84 10.4 6.87 0 .05 0 .1.1.14 6.2 6.22 8.4 14.34 9.3 22.46V192c0 17.7-14.3 32-32 32s-32-14.3-32-32v-50.7L214.6 310.6c-12.5 12.5-32.7 12.5-45.2 0s-12.5-32.7 0-45.2L338.7 96H288c-17.7 0-32-14.33-32-32zM0 128c0-35.35 28.65-64 64-64h96c17.7 0 32 14.33 32 32 0 17.7-14.3 32-32 32H64v288h288v-96c0-17.7 14.3-32 32-32s32 14.3 32 32v96c0 35.3-28.7 64-64 64H64c-35.35 0-64-28.7-64-64V128z"
                             ></path>
                         </svg>
                     </a>
-                    <div class="flex flex-col justify-center items-center">
+                    <div class="mt-4 sm:mt-6 flex flex-col justify-center items-center">
                         <img
                             id="qr-code"
-                            class="hidden mt-4 w-48 h-48 [image-rendering:pixelated]"
+                            class="hidden w-48 h-48 [image-rendering:pixelated]"
                             alt="QR Code"
                         />
                     </div>
                 </section>
-                <section class="space-y-1 sm:space-y-1.5">
+                <section class="mt-9 sm:mt-12">
                     <p id="download">If you do not have Sonolus yet, download it here:</p>
-                    <a
-                        class="space-x-1 underline sm:space-x-1.5"
-                        href="https://sonolus.com"
-                        target="_blank"
-                    >
+                    <a class="underline" href="https://sonolus.com" target="_blank">
                         <span class="break-words">https://sonolus.com</span>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512"
-                            class="inline h-4 w-4 fill-current align-text-bottom sm:h-5 sm:w-5"
+                            class="inline ml-1 h-4 w-4 fill-current align-text-bottom sm:ml-1.5 sm:h-5 sm:w-5"
                         >
                             <path
                                 d="M256 64c0-17.67 14.3-32 32-32h127.1c5.2 0 9.4.86 13.1 2.43 2.9 1.55 7.3 3.84 10.4 6.87 0 .05 0 .1.1.14 6.2 6.22 8.4 14.34 9.3 22.46V192c0 17.7-14.3 32-32 32s-32-14.3-32-32v-50.7L214.6 310.6c-12.5 12.5-32.7 12.5-45.2 0s-12.5-32.7 0-45.2L338.7 96H288c-17.7 0-32-14.33-32-32zM0 128c0-35.35 28.65-64 64-64h96c17.7 0 32 14.33 32 32 0 17.7-14.3 32-32 32H64v288h288v-96c0-17.7 14.3-32 32-32s32 14.3 32 32v96c0 35.3-28.7 64-64 64H64c-35.35 0-64-28.7-64-64V128z"
