@@ -1,14 +1,24 @@
+import './index.css'
+import QRCode from 'qrcode'
+
 initializeLink()
 initializeLocale()
 
 function initializeLink() {
-    const link =
-        'sonolus:/' + location.pathname + location.search + location.hash
+    const link = 'sonolus:/' + location.pathname + location.search + location.hash
 
     document.getElementById('link').setAttribute('href', link)
     document.getElementById('link-text').innerText = link
 
     setTimeout(() => (location.href = link), 1000)
+
+    QRCode.toDataURL(link, { errorCorrectionLevel: 'high' }, (error, url) => {
+        if (error) return
+
+        const img = document.getElementById('qr-code')
+        img.classList.toggle('hidden')
+        img.src = url
+    })
 }
 
 function initializeLocale() {
@@ -41,16 +51,14 @@ function initializeLocale() {
             lang: 'id',
             title: 'Buka di Sonolus',
             header: 'Membuka...',
-            tryAgain:
-                'Jika Sonolus tidak terbuka, klik tautan berikut untuk mencoba lagi:',
+            tryAgain: 'Jika Sonolus tidak terbuka, klik tautan berikut untuk mencoba lagi:',
             download: 'Jika Anda belum memiliki Sonolus, unduh di sini:',
         },
         ja: {
             lang: 'ja',
             title: 'Sonolusで開く',
             header: '移動中...',
-            tryAgain:
-                'Sonolusが開かなかった場合は、このリンクをタップしてみてください：',
+            tryAgain: 'Sonolusが開かなかった場合は、このリンクをタップしてみてください：',
             download:
                 'Sonolusをまだインストールしていない場合は、ここからインストールしてください：',
         },
@@ -58,10 +66,8 @@ function initializeLocale() {
             lang: 'ko',
             title: 'Sonolus에서 열기',
             header: '여는 중...',
-            tryAgain:
-                'Sonolus가 열리지 않았다면, 다음 링크를 사용해서 다시 시도해보세요:',
-            download:
-                'Sonolus를 아직 설치하지 않았다면, 여기서 다운로드하세요:',
+            tryAgain: 'Sonolus가 열리지 않았다면, 다음 링크를 사용해서 다시 시도해보세요:',
+            download: 'Sonolus를 아직 설치하지 않았다면, 여기서 다운로드하세요:',
         },
         zhs: {
             lang: 'zh-hans',
@@ -101,9 +107,7 @@ function getLocale() {
         case 'in':
             return 'id'
         case 'zh':
-            return ['hant', 'hk', 'tw'].some((tag) => rest.includes(tag))
-                ? 'zht'
-                : 'zhs'
+            return ['hant', 'hk', 'tw'].some((tag) => rest.includes(tag)) ? 'zht' : 'zhs'
         default:
             return 'en'
     }
