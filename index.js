@@ -1,3 +1,5 @@
+import './index.css'
+
 initializeLink()
 initializeLocale()
 
