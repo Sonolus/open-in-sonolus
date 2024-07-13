@@ -1,7 +1,8 @@
 {
-    "lang": "ko",
-    "title": "Sonolus에서 열기",
-    "header": "여는 중...",
-    "try-again": "Sonolus가 열리지 않았다면, 다음 링크를 사용해서 다시 시도해보세요:",
-    "download": "Sonolus를 아직 설치하지 않았다면, 여기서 다운로드하세요:"
+  "lang": "ko",
+  "title": "Sonolus에서 열기",
+  "header": "여는 중...",
+  "try-again": "Sonolus가 열리지 않았다면, 다음 링크를 사용해서 다시 시도해보세요:",
+  "scan": "다른 기기를 사용 중이라면 Sonolus의 링크 기능을 사용하여 QR 코드를 스캔하십시오:",
+  "download": "Sonolus를 아직 설치하지 않았다면, 여기서 다운로드하세요:"
 }
