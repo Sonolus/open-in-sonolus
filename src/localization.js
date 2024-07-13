@@ -17,19 +17,12 @@ const getLocale = () => {
     const [main, ...rest] = navigator.language.toLowerCase().split('-')
 
     switch (main) {
-        case 'el':
-        case 'es':
-        case 'fr':
-        case 'id':
-        case 'ja':
-        case 'ko':
-            return main
         case 'in':
             return 'id'
         case 'zh':
             return ['hant', 'hk', 'tw'].some((tag) => rest.includes(tag)) ? 'zht' : 'zhs'
         default:
-            return 'en'
+            return main
     }
 }
 
