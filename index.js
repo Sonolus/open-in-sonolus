@@ -1,8 +1,8 @@
 import './index.css'
-import QRCode from 'qrcode'
+import { renderSVG } from 'uqr'
 
-initializeLink()
 initializeLocale()
+initializeLink()
 
 function initializeLink() {
     const link = 'sonolus:/' + location.pathname + location.search + location.hash
@@ -12,13 +12,9 @@ function initializeLink() {
 
     setTimeout(() => (location.href = link), 1000)
 
-    QRCode.toDataURL(link, { errorCorrectionLevel: 'high' }, (error, url) => {
-        if (error) return
-
-        const img = document.getElementById('qr-code')
-        img.classList.toggle('hidden')
-        img.src = url
-    })
+    const container = document.getElementById('qr-code')
+    container.innerHTML = renderSVG(link, { ecc: 'M', border: 2 })
+    container.classList.toggle('hidden')
 }
 
 function initializeLocale() {
