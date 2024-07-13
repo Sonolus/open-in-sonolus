@@ -9,6 +9,7 @@ export const initializeLocale = () => {
     document.title = i18n.title
     localize('header', i18n)
     localize('try-again', i18n)
+    localize('scan', i18n)
     localize('download', i18n)
 }
 
