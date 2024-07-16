@@ -1,7 +1,8 @@
 {
-    "lang": "id",
-    "title": "Buka di Sonolus",
-    "header": "Membuka...",
-    "try-again": "Jika Sonolus tidak terbuka, klik tautan berikut untuk mencoba lagi:",
-    "download": "Jika Anda belum memiliki Sonolus, unduh di sini:"
+  "lang": "id",
+  "title": "Buka di Sonolus",
+  "header": "Membuka...",
+  "try-again": "Jika Sonolus tidak terbuka, klik tautan berikut untuk mencoba lagi:",
+  "scan": "Jika Anda menggunakan perangkat yang berbeda, scan Kode QR menggunakan fitur Link di Sonolus:",
+  "download": "Jika Anda belum memiliki Sonolus, unduh di sini:"
 }
