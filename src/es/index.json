@@ -1,7 +1,8 @@
 {
-    "lang": "es",
-    "title": "Abrir en Sonolus",
-    "header": "Abriendo...",
-    "try-again": "Si Sonolus no se abrió, haga clic en el siguiente enlace para volver a intentarlo:",
-    "download": "Si aún no tienes Sonolus, descárgalo aquí:"
+  "lang": "es",
+  "title": "Abrir en Sonolus",
+  "header": "Abriendo...",
+  "try-again": "Si Sonolus no se abrió, haz clic en el siguiente enlace para volver a intentarlo:",
+  "scan": "Si estás en un dispositivo diferente, escanea el código QR usando la función de enlace en Sonolus:",
+  "download": "Si aún no tienes Sonolus, descárgalo aquí:"
 }
