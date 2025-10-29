@@ -1,7 +1,8 @@
 {
-    "lang": "zh-hant",
-    "title": "在Sonolus中打開",
-    "header": "正在打開…",
-    "try-again": "如果沒有打開Sonolus，請按以下鏈接重試：",
-    "download": "如果你的設備還未有Sonolus，請在這裏下載："
+  "lang": "zh-hant",
+  "title": "在Sonolus中打開",
+  "header": "正在打開…",
+  "try-again": "如果沒有打開Sonolus，請按以下鏈接重試：",
+  "scan": "如果你處於另一台設備，請掃描二維碼以轉到Sonolus:",
+  "download": "如果你的設備還未有Sonolus，請在這裏下載："
 }
