@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.FosFenes.Sonolus",
+            "sha256_cert_fingerprints": [
+                "B6:3C:E2:45:43:2B:A4:6A:C4:C2:C4:06:B5:A5:B7:87:55:DB:E4:95:F9:3F:11:A0:A9:94:A2:5E:CC:1E:B8:03"
+            ]
+        }
+    }
+]
