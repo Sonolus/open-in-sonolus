@@ -2,7 +2,7 @@
   "lang": "vi",
   "title": "Mở trong Sonolus",
   "header": "Đang mở...",
-  "try-again": "Nếu Sonolus không mở, hãy nhấp vào liên kết sau để thử lại:",
-  "scan": "Nếu bạn đang sử dụng thiết bị khác, hãy quét Mã QR bằng tính năng Liên kết trong Sonolus:",
+  "try-again": "Nếu Sonolus vẫn chưa hiện, hãy thử bấm lại liên kết sau để thử lại thêm lần nữa:",
+  "scan": "Nếu bạn đang trên thiết bị khác (như máy tính, điện thoại khác), hãy dùng tính năng Quét mã QR của tính năng Liên kết trong Sonolus:",
   "download": "Nếu bạn chưa có Sonolus, hãy tải xuống tại đây:"
 }
